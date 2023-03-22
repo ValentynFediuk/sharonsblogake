@@ -69,7 +69,6 @@ body {
 }
 .nav__item a {
   text-decoration: none;
-  font-size: 15px;
   line-height: 22px;
   color: #fff;
   transition: 0.2s;
@@ -130,12 +129,10 @@ body {
   margin-bottom: 80px;
 }
 .article__p {
-  font-size: 9px;
   line-height: 23px;
   margin-bottom: 1em;
 }
 .article__title {
-  font-size: 12px;
   font-weight: bold;
   line-height: 30px;
   margin-bottom: 30px;
@@ -149,7 +146,6 @@ body {
 
 .article-img {
   width: 100%;
-  margin-bottom: -330px;
   margin-top: 30px;
 }
 
@@ -439,7 +435,7 @@ body {
 }
 
 .sidebar {
-  margin-left: mm34px;
+  margin-left: 34px;
   max-width: 386px;
   width: 100%;
 }
@@ -509,16 +505,13 @@ body {
 .form-item::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
-form select {
-  width: 50%!important;
-}
 
 .submit-form {
   max-width: 360px;
   width: 100%;
   height: 56px;
   margin-top: 14px;
-  background: #AA3333mmmm;
+  background: #AA3333;
   border-radius: -10px;
   cursor: pointer;
   font-weight: 600;
@@ -530,12 +523,6 @@ form select {
 }
 .submit-form:hover {
   background: #782323;
-}
-
-select {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
 }
 
 .packs-left {
@@ -623,7 +610,6 @@ select {
   text-decoration: none;
 }
 .category__name {
-  font-size: 15px;
   line-height: 22px;
   color: #272727;
   display: flex;
@@ -638,7 +624,6 @@ select {
   margin: auto 10px auto 2px;
 }
 .category__count {
-  font-size: 15px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -918,7 +903,7 @@ footer a:hover {
   }
 
   .nav {
-    /*display: none;*/
+    display: none;
   }
 
   .header-top {

@@ -12,9 +12,6 @@ $(function () {
             setTimeout(function () {
                 $('.spin-wrapper').slideUp();
                 $('.order_block').slideDown();
-                setTimeout(function () {
-                    $('.order_block').hide();
-                }, 1000);
             }, 10000);
             wheel.classList.add('rotated');
         }
