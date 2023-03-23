@@ -1,7 +1,3 @@
-.features-wrapper {
-
-}
-
 .spin-wrapper {
     text-align: center;
     box-sizing: border-box;
@@ -284,30 +280,16 @@
 }
 
 @-webkit-keyframes super-rotation {
-    70% {
+    to {
         -webkit-transform: rotate(1783deg);
         transform: rotate(1783deg)
-    }
-
-    100% {
-        -webkit-transform: rotate(1774deg);
-        transform: rotate(1774deg)
     }
 }
 
 @keyframes super-rotation {
-    70% {
+    to {
         -webkit-transform: rotate(1783deg);
         transform: rotate(1783deg)
-    }
-    80% {
-        -webkit-transform: rotate(983deg);
-        transform: rotate(983deg)
-    }
-
-    100% {
-        -webkit-transform: rotate(1274deg);
-        transform: rotate(1274deg)
     }
 }
 
@@ -501,5 +483,9 @@
 @media all and (max-width: 370px) {
     .wheel {
         width: 280px !important
+    }
+
+    .alert {
+        font-size: 14px;
     }
 }
