@@ -1,0 +1,1 @@
+$(function(){var e=$(".mobile-menu");const o=$(".nav");e.click(function(){o.toggleClass("nav--active"),$("body").toggleClass("overflow-hidden")}),o.children().click(function(){$("body").removeClass("overflow-hidden"),o.removeClass("nav--active")})});
