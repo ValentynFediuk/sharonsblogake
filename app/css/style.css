@@ -192,6 +192,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 48px;
+  overflow: hidden;
 }
 
 .last-p {
@@ -1065,7 +1066,7 @@ footer a:hover {
 }
 @media screen and (max-width: 410px) {
   .pop-up-heading {
-    font-size: 34px;
+    font-size: 28px;
   }
 
   .pop-up-text {
