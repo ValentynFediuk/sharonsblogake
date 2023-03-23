@@ -60,7 +60,7 @@ $( document ).ready(function() {
 
     document.querySelectorAll('.emoji-box.active').forEach(item => {
         emojiCountersData.forEach(storageItem => {
-            const likesIdValue = item.getAttribute('emoji-id');
+            const likesIdValue = item.getAttribute('data-emoji-id');
 
             if (likesIdValue === storageItem.id) {
                 item.querySelector('.emoji-box__like-count').innerHTML = storageItem.count;
@@ -125,7 +125,7 @@ $( document ).ready(function() {
     };
 
     $('.emoji-box.active').on('inview', (event, isInView) => {
-        const emojiId = event.target.getAttribute('emoji-id');
+        const emojiId = event.target.getAttribute('data-emoji-id');
         let counterValue = parseInt(event.target.querySelector('.emoji-box__like-count').innerHTML);
         if (!counterValue) {
             counterValue = 0;

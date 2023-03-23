@@ -484,4 +484,8 @@
     .wheel {
         width: 280px !important
     }
+
+    .alert {
+        font-size: 14px;
+    }
 }

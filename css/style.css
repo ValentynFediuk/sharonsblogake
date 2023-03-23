@@ -10,6 +10,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .header {
   width: 100%;
   margin-bottom: 50px;
@@ -312,13 +316,13 @@ body {
 }
 .comment__author-name {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   margin-bottom: 10px;
 }
 .comment__text {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
 }
 .comment__footer {
   display: flex;
@@ -512,7 +516,7 @@ body {
   height: 56px;
   margin-top: 14px;
   background: #AA3333;
-  border-radius: -10px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
   font-size: 24px;
@@ -885,10 +889,12 @@ footer a:hover {
 
   .follow {
     order: 4;
+    margin-bottom: 69px;
   }
 
   .order-btn-mobile {
     order: 5;
+    margin-top: 0;
   }
 
   .recommend__body {
@@ -900,10 +906,31 @@ footer a:hover {
     display: flex;
     height: 100%;
     align-items: center;
+    cursor: pointer;
   }
 
   .nav {
-    display: none;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #393939;
+    width: 100%;
+    padding: 50px;
+    flex-direction: column;
+    z-index: 301;
+    justify-content: center;
+    gap: 50px;
+    height: calc(100vh - 108px);
+    transition: 0.5s ease-in-out;
+    transform: translateX(-300%);
+  }
+
+  .nav.nav--active {
+    top: 108px;
+    
+    transform: translateX(0);
   }
 
   .header-top {
@@ -961,7 +988,7 @@ footer a:hover {
   }
 
   .article__title {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 125%;
     margin-bottom: 30px;
   }
@@ -974,7 +1001,7 @@ footer a:hover {
   }
 
   .article__p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
   }
 
@@ -1005,7 +1032,7 @@ footer a:hover {
 
   .comments__title {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 135%;
   }
   .comments .emoji-box {

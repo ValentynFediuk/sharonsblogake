@@ -3,10 +3,9 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +13,10 @@
 
     <title>Sharon's Blog</title>
 
-   <link href="css/reset.css" media="all" rel="stylesheet" type="text/css"/>
-    <link href="css/style-old.css" media="all" rel="stylesheet" type="text/css"/>
-    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/live-comments.css"/>
+   <link href="css/reset.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style-old.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/live-comments.css">
    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 
 
@@ -28,14 +27,14 @@
 <header class="header">
     <div class="header-top">
         <div class="header-logo">
-            <img class="logo" src="img/header-logo.svg" alt="">
+            <img class="logo" src="img/header-logo.svg" alt="Logo">
         </div>
     </div>
     <div class="header-bottom">
         <div class="container">
-            <a href="#toform" class="mobile-menu">
-                <img src="img/burger.svg" alt="">
-            </a>
+            <div class="mobile-menu">
+                <img src="img/burger.svg" alt="Burger button">
+            </div>
             <ul class="nav">
                 <li class="nav__item"><a href="#toform">Home</a></li>
                 <li class="nav__item"><a href="#toform">Lifestyle</a></li>
@@ -48,28 +47,28 @@
                 <ul class="social">
                     <li class="social-item">
                         <a href="#toform">
-                            <img src="img/facebook.svg" alt="">
+                            <img src="img/facebook.svg" alt="Facebook">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="#toform">
-                            <img src="img/twitter.svg" alt="">
+                            <img src="img/twitter.svg" alt="Twitter">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="#toform">
-                            <img src="img/instagram.svg" alt="">
+                            <img src="img/instagram.svg" alt="Instagram">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="#toform">
-                            <img src="img/youtube.svg" alt="">
+                            <img src="img/youtube.svg" alt="Youtube">
                         </a>
                     </li>
                 </ul>
                 <div class="search-btn">
                     <a class="search-btn__img" href="#toform">
-                        <img src="img/search.png" alt="">
+                        <img src="img/search.png" alt="Search">
                     </a>
                 </div>
             </div>
@@ -83,12 +82,12 @@
     <main class="main">
         <article class="article">
 
-            <img src="img/article-img1.jpg" alt="" class="article-img first-img">
+            <img src="img/article-img1.jpg" alt="Article image" class="article-img first-img">
 
             <h2 class="article__title">
                 We were on the verge of divorce because of the weak potency of my husband! But our family was miraculously saved.
                 Now he can 4-6 times a night!
-                <div class="article__author">Published <script>dtime_me(-8, true);</script> Author: Sharon</div>
+                <span class="article__author">Published <script>dtime_me(-8, true);</script> Author: Sharon</span>
             </h2>
 
             <p class="article__p">
@@ -114,7 +113,7 @@
                 husband felt depressed.
             </p>
 
-            <img src="img/article-img2.jpg" alt="" class="article-img">
+            <img src="img/article-img2.jpg" alt="Article image" class="article-img">
 
             <h2 class="article__title">Then a surprise came…</h2>
 
@@ -171,7 +170,7 @@
                 So, I easily ordered some Long Jack XXXL.
             </p>
 
-            <img src="img/article-img3.jpg" alt="" class="article-img">
+            <img src="img/article-img3.jpg" alt="Article image" class="article-img">
 
             <h2 class="article__title">How was the result?</h2>
 
@@ -201,7 +200,7 @@
                 but if it can change your life for good, why not?
             </p>
 
-            <img src="img/article-img4.jpg" alt="" class="article-img article-img--last">
+            <img src="img/article-img4.jpg" alt="Article image" class="article-img article-img--last">
 
         </article>
 
@@ -224,9 +223,9 @@
                 </div>
                 <div class="wheel-wrapper">
                     <div class="wheel">
-                        <img alt class="wheel-img" src="img/prizewheel.svg"/>
+                        <img alt class="wheel-img" src="img/prizewheel.svg">
                         <div class="wheel-cursor">
-                            <img alt src="img/wheel-cursor.png"/><span class="cursor-text">
+                            <img alt src="img/wheel-cursor.png"><span class="cursor-text">
                     SPIN</span>
                         </div>
                     </div>
@@ -238,20 +237,20 @@
                 <p class="offer-date">Offer valid until (inclusive): <span class="highlight"><script>dtime_me(0, true);</script></span></p>
                 <div class="order-info">
                     <div class="order-info__product">
-                        <img src="img/product2.png" alt="">
+                        <img src="img/product2.png" alt="Product">
                     </div>
                     <div class="order-info__price-wrap">
-                        <img src="img/discount-label.png" alt="">
+                        <img src="img/discount-label.png" alt="Discount label">
                         <div class="x_currency_old">{OLD_PRICE}</div>
                         <div class="x_currency">{PRICE}</div>
                     </div>
                 </div>
-                <form action="" class="form_order" method="post">
+                <form action="order" class="form_order" method="post">
                     <div class="target_list_wrap">
                         <select class="js-select form-item" name="target_geo_hash">
                         </select>
                     </div>
-                    <select required="" name="custom[city]" id="" class="form-item">
+                    <select required name="custom[city]" class="form-item">
                         <option value="">Choose city</option>
                         <option value="Nairobi">Nairobi</option>
                         <option value="Mombasa">Mombasa</option>
@@ -292,16 +291,16 @@
         </div>
 
 
-        <img src="img/certificate.jpg" alt="" class="article-img certificate">
+        <img src="img/certificate.jpg" alt="Certificate" class="article-img certificate">
 
 
         <div class="comments">
-            <div class="comments__title">Most recent comments <img src="img/angle-down.svg" alt=""></div>
+            <div class="comments__title">Most recent comments <img src="img/angle-down.svg" alt="Angle down icon"></div>
 
             <div class="comment-wrap">
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/aw1.jpg" alt="">
+                        <img src="img/aw1.jpg" alt="Comment author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -316,16 +315,16 @@
                                 <span class="comment__ui-item">Like</span>
                                 <span class="comment__ui-item">Reply</span>
                             </div>
-                            <div class="emoji-box active" emoji-id="3">
+                            <div class="emoji-box active" data-emoji-id="3">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">1</div>
@@ -339,7 +338,7 @@
 
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/c1.jpg" alt="">
+                        <img src="img/c1.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -349,7 +348,7 @@
                                 because of his weak boner. As a result, we broke up, and I met the man of my dreams.
                                 He shocked me in bed: he can have sex for hours and his penis is hard as stone! He
                                 recently told me that Long Jack XXXL gives him so much energy) 💪👍😎
-                                <img src="img/image-1.jpg" class="comment__img" alt="">
+                                <img src="img/image-1.jpg" class="comment__img" alt="Image in comment">
                             </div>
                         </div>
                         <div class="comment__footer">
@@ -358,16 +357,16 @@
                                 <span class="comment__ui-item">Like</span>
                                 <span class="comment__ui-item">Reply</span>
                             </div>
-                            <div class="emoji-box active" emoji-id="1">
+                            <div class="emoji-box active" data-emoji-id="1">
                                 <div class="emoji-box__emoji-wrap">
-                                    <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                    <div class="emoji-box__ico like-ico">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
-                                    <div class="emoji-box__ico heart-ico">
-                                        <img src="img/emoji-heart.png" alt="">
+                                    <div class="emoji-box__ico heart-ico active">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">2</div>
@@ -378,7 +377,7 @@
 
                 <div class="comment comment--answer answer-wrap" data-id="1">
                     <div class="comment__author-pic">
-                        <img src="img/005.jpg" alt="">
+                        <img src="img/005.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -399,16 +398,16 @@
                                 <span class="comment__ui-item">Like</span>
                                 <span class="comment__ui-item">Reply</span>
                             </div>
-                            <div class="emoji-box active" emoji-id="2">
+                            <div class="emoji-box active" data-emoji-id="2">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
-                                    <div class="emoji-box__ico heart-ico">
-                                        <img src="img/emoji-heart.png" alt="">
+                                    <div class="emoji-box__ico heart-ico active">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count"></div>
@@ -424,7 +423,7 @@
 
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/c2.jpg" alt="">
+                        <img src="img/c2.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -441,14 +440,14 @@
                             </div>
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
-                                    <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                    <div class="emoji-box__ico like-ico">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
-                                    <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                    <div class="emoji-box__ico wow-ico">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">9</div>
@@ -459,7 +458,7 @@
 
                 <div class="comment comment--answer">
                     <div class="comment__author-pic">
-                        <img src="img/001.jpg" alt="">
+                        <img src="img/001.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -478,14 +477,14 @@
                             </div>
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
-                                    <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                    <div class="emoji-box__ico like-ico">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">4</div>
@@ -502,7 +501,7 @@
 
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/c6.jpg" alt="">
+                        <img src="img/c6.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -520,14 +519,14 @@
                             </div>
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
-                                    <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                    <div class="emoji-box__ico like-ico">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
-                                    <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                    <div class="emoji-box__ico wow-ico">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">11</div>
@@ -538,7 +537,7 @@
 
                 <div class="comment comment--answer">
                     <div class="comment__author-pic">
-                        <img src="img/author-avatar.jpg" alt="">
+                        <img src="img/author-avatar.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -555,14 +554,14 @@
                             </div>
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
-                                    <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                    <div class="emoji-box__ico like-ico">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
-                                    <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                    <div class="emoji-box__ico wow-ico">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">9</div>
@@ -578,7 +577,7 @@
 
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/c10.jpg" alt="">
+                        <img src="img/c10.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -596,14 +595,14 @@
                             </div>
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
-                                    <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                    <div class="emoji-box__ico like-ico">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
-                                    <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                    <div class="emoji-box__ico wow-ico">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">14</div>
@@ -614,7 +613,7 @@
 
                 <div class="comment comment--answer answer-wrap" data-id="2">
                     <div class="comment__author-pic">
-                        <img src="img/author-avatar.jpg" alt="">
+                        <img src="img/author-avatar.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -631,20 +630,20 @@
                         </div>
                         <div class="comment__footer additional-block">
                             <div class="comment__ui">
-<!--                                <span class="comment__ui-item">Just now</span>-->
-<!--                                <span class="comment__ui-item">Like</span>-->
-<!--                                <span class="comment__ui-item">Reply</span>-->
+                                <span class="comment__ui-item">Just now</span>
+                                <span class="comment__ui-item">Like</span>
+                                <span class="comment__ui-item">Reply</span>
                             </div>
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
-                                    <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                    <div class="emoji-box__ico like-ico">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">4</div>
@@ -661,7 +660,7 @@
 
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/c14.jpg" alt="">
+                        <img src="img/c14.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -669,7 +668,7 @@
                             <div class="comment__text">
                                 Wife doesn’t understand what has happened) But she likes it! We even stopped
                                 arguing all the time) Ordered it on the official website, delivery is always on time.
-                                <img src="img/post-img-test.jpg" alt="" class="comment__img">
+                                <img src="img/post-img-test.jpg" alt="Comment image" class="comment__img">
                             </div>
                         </div>
                         <div class="comment__footer">
@@ -681,13 +680,13 @@
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">14</div>
@@ -698,7 +697,7 @@
 
                 <div class="comment comment--answer">
                     <div class="comment__author-pic">
-                        <img src="img/003.jpg" alt="">
+                        <img src="img/003.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -716,13 +715,13 @@
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">4</div>
@@ -739,7 +738,7 @@
 
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/c17.jpg" alt="">
+                        <img src="img/c17.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -757,13 +756,13 @@
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
-                                    <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                    <div class="emoji-box__ico wow-ico">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">18</div>
@@ -774,7 +773,7 @@
 
                 <div class="comment comment--answer">
                     <div class="comment__author-pic">
-                        <img src="img/author-avatar.jpg" alt="">
+                        <img src="img/author-avatar.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -792,13 +791,13 @@
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">4</div>
@@ -813,7 +812,7 @@
             <div class="comment-wrap">
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/005.jpg" alt="">
+                        <img src="img/005.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -821,7 +820,7 @@
                             <div class="comment__text">
                                 I decided to make an experiment) As soon as it got delivered, I took it and went
                                 to my girlfriend. We had sex for 3 hours! I am in shock! I never had anything like this before
-                                <img src="img/2.jpg" alt="" class="comment__img">
+                                <img src="img/2.jpg" alt="Comment image" class="comment__img">
                             </div>
                         </div>
                         <div class="comment__footer">
@@ -833,13 +832,13 @@
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">29</div>
@@ -855,7 +854,7 @@
 
                 <div class="comment">
                     <div class="comment__author-pic">
-                        <img src="img/c20.jpg" alt="">
+                        <img src="img/c20.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -873,13 +872,13 @@
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
                                     <div class="emoji-box__ico heart-ico">
-                                        <img src="img/emoji-heart.png" alt="">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico active">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">5</div>
@@ -890,7 +889,7 @@
 
                 <div class="comment comment--answer">
                     <div class="comment__author-pic">
-                        <img src="img/004.jpg" alt="">
+                        <img src="img/004.jpg" alt="Author avatar">
                     </div>
                     <div class="comment__wrap">
                         <div class="comment__body">
@@ -908,13 +907,13 @@
                             <div class="emoji-box">
                                 <div class="emoji-box__emoji-wrap">
                                     <div class="emoji-box__ico like-ico active">
-                                        <img src="img/emoji-like.png" alt="">
+                                        <img src="img/emoji-like.png" alt="Like emoji">
                                     </div>
-                                    <div class="emoji-box__ico heart-ico active">
-                                        <img src="img/emoji-heart.png" alt="">
+                                    <div class="emoji-box__ico heart-ico">
+                                        <img src="img/emoji-heart.png" alt="Heart emoji">
                                     </div>
                                     <div class="emoji-box__ico wow-ico">
-                                        <img src="img/emoji-wow.png" alt="">
+                                        <img src="img/emoji-wow.png" alt="Wow emoji">
                                     </div>
                                 </div>
                                 <div class="emoji-box__like-count">8</div>
@@ -936,7 +935,7 @@
         <div class="about">
             <div class="sidebar-section-title">About me</div>
             <div class="about__img">
-                <img src="img/author-avatar.jpg" alt="">
+                <img src="img/author-avatar.jpg" alt="Author avatar">
             </div>
             <p class="about__title">Hi I'm Sharon</p>
             <p class="about__text">
@@ -971,7 +970,7 @@
             <a href="#toform" class="post">
                 <span class="post__counter">1</span>
                 <div class="post__img">
-                    <img src="img/post-img-test1.jpg" alt="">
+                    <img src="img/post-img-test1.jpg" alt="Post image">
                 </div>
                 <div class="post__body">
                     <p class="post__title">How to grow in self confidence</p>
@@ -985,7 +984,7 @@
             <a href="#toform" class="post">
                 <span class="post__counter">2</span>
                 <div class="post__img">
-                    <img src="img/post-img-test2.jpg" alt="">
+                    <img src="img/post-img-test2.jpg" alt="Post image">
                 </div>
                 <div class="post__body">
                     <p class="post__title">Success Stories</p>
@@ -999,7 +998,7 @@
             <a href="#toform" class="post">
                 <span class="post__counter">3</span>
                 <div class="post__img">
-                    <img src="img/post-img-test3.jpg" alt="">
+                    <img src="img/post-img-test3.jpg" alt="Post image">
                 </div>
                 <div class="post__body">
                     <p class="post__title">Awesome Breathtaking Places</p>
@@ -1032,7 +1031,7 @@
             <div class="sidebar-section-title">i recommend</div>
             <div class="recommend__body">
                 <div class="recommend__img">
-                    <img src="img/sidebar-prod.png" alt="">
+                    <img src="img/sidebar-prod.png" alt="Sidebar product">
                 </div>
                 <div class="recommend__text-wrap">
                     <p class="recommend__title">
@@ -1054,22 +1053,22 @@
             <ul class="follow__social">
                 <li class="follow__social-item">
                     <a href="#toform">
-                        <img src="img/facebook-b.svg" alt="">
+                        <img src="img/facebook-b.svg" alt="Facebook">
                     </a>
                 </li>
                 <li class="follow__social-item">
                     <a href="#toform">
-                        <img src="img/twitter-b.svg" alt="">
+                        <img src="img/twitter-b.svg" alt="Twitter">
                     </a>
                 </li>
                 <li class="follow__social-item">
                     <a href="#toform">
-                        <img src="img/instagram-b.svg" alt="">
+                        <img src="img/instagram-b.svg" alt="instagram">
                     </a>
                 </li>
                 <li class="follow__social-item">
                     <a href="#toform">
-                        <img src="img/youtube-b.svg" alt="">
+                        <img src="img/youtube-b.svg" alt="Youtube">
                     </a>
                 </li>
             </ul>
@@ -1077,7 +1076,7 @@
 
         <a href="#toform" class="order-btn-mobile">Order Long Jack XXXL</a>
 
-    </div>
+    </aside>
 
 </div>
 
@@ -1088,7 +1087,7 @@
     <a href="{TERMS_URL}" target="_blank">Terms &amp; Conditions </a> |
     <a href="{PRIVACY_POLICY_URL}" target="_blank">Privacy Policy</a> |
     <a target="_blank" href="{RETURNS_URL}">Returns, Refunds and Exchanges Policy</a>
-</footer>
+</footer>   
 
 <div class="alert">
     <img src="img/product2.png" alt="XXXL" class="alert__img">
@@ -1103,6 +1102,8 @@
 <script src="js/live-comments.js"></script>
 
 <script src="js/alarm.js"></script>
+<script src="js/mobile-menu.js"></script>
+
 <script src="js/main.js"></script>
 
 </body>
